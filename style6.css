@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+ height: 100vh;
+ width: 100%;
+ position: relative;
+ top:0;
+ left: 0;
+ background: white;
+}
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    font-size: 34px;
+    color: #01ce69;
+    font-weight: bolder;
+}
+.navbar{
+    height: 60px;
+    width: 925px;
+    position: absolute;
+    top: 50px;
+    right: 1%;
+    border-radius: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+.navbar ul{
+    height: 100%;
+    width: 965px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbar ul li a{
+  height: 100%;
+  width: auto;
+  margin: 0 70px;
+  font-size: 25px;
+  margin-left: 0;
+  display: grid;
+  place-items: centre;
+  padding: 0 4px;
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a:hover{
+  color:#01ce69;
+  border-bottom: 2px solid #01ce69;
+}
+
+.circle{
+    height:600px;
+    width: 600px;
+    border-radius: 50%;
+    background: #01ce6915 ;
+    position: absolute;
+    left: 1%;
+    bottom: 9%;
+}
+.sideimage{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.content{
+    height: auto;
+    width: 700px;
+    position: absolute;
+    right: 5%;
+    top: calc(50% - 215px);
+}
+.content h2{
+    font-size: 170px;
+    color: #01ce69;
+}
+.content p{
+    font-size: 18px;
+}
+.content button{
+    height: 65px;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    margin: 20px 0;
+    background: #01ce69;
+    color: white;
+    cursor: pointer;
+}
+
+.content button:hover{
+    color:#01ce69;
+    background: transparent;
+    border: 2px solid #01ce69;
+}
+.social{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.social a{
+    text-decoration: none;
+    margin: 12px 0;
+}
+.social a i{
+    height: 40px;
+    width: 0 20px;
+    font-size: 40px;
+    color: white;
+    background: #01ce69;
+    display: grid;
+    place-items: centre;
+    border-radius: 10px;
+}
+.social a i:hover{
+    background: transparent;
+    color: #01ce69;
+    border: 2px solid #01ce69;
+}
+.icon{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    font-size: 30px;
+    bottom: 0px;
+    right: 10%;
+    background: #01ce69;
+    display: grid;
+    place-items: centre;
+    border-radius: 50px;
+    font-size: 60px;
+    border: 2px solid #01ce69;
+
+    animation: animate 6s ease-in-out infinite ;
+}
+
+@keyframes animate {
+    0%{
+        background: #01ce69;
+        color: white;
+        right: 20%;
+    }
+    50%{
+        background: #01ce6900;
+        color: #01ce69;
+        right: 25%;
+    }
+}
